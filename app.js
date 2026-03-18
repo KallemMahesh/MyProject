@@ -72,10 +72,9 @@ const sessionOptions={
     },
 };
 
-
-// app.get("/",(req,res)=>{
-//     res.send("HII i am root");
-// });
+app.get("/", (req, res) => {
+    res.send("App is working 🚀");
+});
 
 
 
