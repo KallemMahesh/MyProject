@@ -72,12 +72,13 @@ const sessionOptions={
     },
 };
 
-app.get("/", (req, res) => {
-    res.send("App is working 🚀");
-});
+
 app.get("/", (req, res) => {
     res.redirect("/listings");
 });
+// app.get("/", (req, res) => {
+//     res.send("App is working 🚀");
+// });
 
 
 
