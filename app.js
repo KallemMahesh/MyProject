@@ -46,9 +46,9 @@ app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname,"/public")));
 
 // 
-
+console.log("DB URL:", process.env.ATLASDB_URL);
 const store = MongoStore.create({
-  mongoUrl:  process.env.dbUrl,
+  mongoUrl: dbUrl,
   crypto: {
     secret: process.env.SECRET,
   },
